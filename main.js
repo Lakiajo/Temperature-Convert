@@ -13,7 +13,6 @@ let value =0;
 
 const toCelsius = () => {
     value = (document.getElementById('tempInput').value - 32) * (5 / 9);
-    
     let color = 'green';
     if(value > 32) {
         color = 'red';
@@ -22,13 +21,11 @@ const toCelsius = () => {
         color = 'blue';
     }
     document.getElementById('divOutput').style.color = color;
-    domStringBuilder = `<h2>${value} degrees C</h2>`
-    
+    domStringBuilder = `<h2>${value} degrees C</h2>`    
 };
 
 const toFahrenheit = () => {
     value = (document.getElementById('tempInput').value * (9/5)) + 32;
-
     let color = 'green';
     if(value > 90) {
         color = 'red';
@@ -38,7 +35,6 @@ const toFahrenheit = () => {
     }
     document.getElementById('divOutput').style.color = color;
     domStringBuilder = `<h2>${value} degrees C</h2>`
-
 };
 
 const determineConverter = () => {
@@ -61,7 +57,6 @@ const clearTempInput = () => {
 
 convertButton.addEventListener("click", determineConverter);
 clearButton.addEventListener("click", clearTempInput);
-
 document.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
         document.getElementById('convertButton').click();
