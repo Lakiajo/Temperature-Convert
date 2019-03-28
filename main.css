@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(184, 44, 108);
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+h1 {
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 30px;
+}
+.pagewrap {
+    display: block;
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+    margin: 2% auto;
+}
+
+.radioButton {
+    text-align: center;
+}
+
+#divOutput {
+    background-color:rgb(217, 145, 175);
+    width:200px;
+    height: 50px;
+    font-size: 15px;
+    margin-top: 5px;
+    margin:0 auto;
+    border: 2px solid rgb(72, 0, 30);
+    color:black;
+    
+}
+
+#tempInput {
+    background-color: rgb(217, 145, 175);
+    font-size: 15px;
+    width: 100px;
+    height: 20px;
+    margin: 5px;
+    border: 2px solid rgb(72, 0, 30);
+    text-align: center;
+}
